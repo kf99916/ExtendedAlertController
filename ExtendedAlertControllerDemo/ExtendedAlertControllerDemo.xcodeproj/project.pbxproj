@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		AA131F7F258A1E8200F627C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA131F7D258A1E8200F627C4 /* Main.storyboard */; };
 		AA131F81258A1E8500F627C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA131F80258A1E8500F627C4 /* Assets.xcassets */; };
 		AA131F84258A1E8500F627C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA131F82258A1E8500F627C4 /* LaunchScreen.storyboard */; };
+		AA131F8E258A230D00F627C4 /* ExtendedAlertController in Frameworks */ = {isa = PBXBuildFile; productRef = AA131F8D258A230D00F627C4 /* ExtendedAlertController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA131F8E258A230D00F627C4 /* ExtendedAlertController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ExtendedAlertControllerDemo;
+			packageProductDependencies = (
+				AA131F8D258A230D00F627C4 /* ExtendedAlertController */,
+			);
 			productName = ExtendedAlertControllerDemo;
 			productReference = AA131F74258A1E8200F627C4 /* ExtendedAlertControllerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = AA131F6B258A1E8200F627C4;
+			packageReferences = (
+				AA131F8C258A230D00F627C4 /* XCRemoteSwiftPackageReference "ExtendedAlertController" */,
+			);
 			productRefGroup = AA131F75258A1E8200F627C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA131F8C258A230D00F627C4 /* XCRemoteSwiftPackageReference "ExtendedAlertController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/kf/Repositories/ExtendedAlertController";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA131F8D258A230D00F627C4 /* ExtendedAlertController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA131F8C258A230D00F627C4 /* XCRemoteSwiftPackageReference "ExtendedAlertController" */;
+			productName = ExtendedAlertController;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA131F6C258A1E8200F627C4 /* Project object */;
 }

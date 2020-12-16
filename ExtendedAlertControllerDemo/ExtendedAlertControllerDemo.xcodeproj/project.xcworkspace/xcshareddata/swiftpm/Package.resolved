@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ExtendedAlertController",
+        "repositoryURL": "/Users/kf/Repositories/ExtendedAlertController",
+        "state": {
+          "branch": "main",
+          "revision": "c5ca87d299d356879d24982cfdccfb9650050830",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
