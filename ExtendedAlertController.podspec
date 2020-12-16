@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "ExtendedAlertController empowers your UIAlertController."
+  spec.description  = "ExtendedAlertController empowers your UIAlertController. This project is inspired by AlertViewController and alerts-and-pickers."
 
   spec.homepage     = "https://github.com/kf99916/ExtendedAlertController"
   spec.screenshots  = "https://raw.githubusercontent.com/kf99916/ExtendedAlertController/main/screenshots/extendedAlertController.png", "https://raw.githubusercontent.com/kf99916/ExtendedAlertController/main/screenshots/extendedAlertController-2.png"
