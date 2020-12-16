@@ -59,11 +59,12 @@ open class ExtendedAlertController: UIAlertController {
 
 // MARK: Open Methods
 public extension ExtendedAlertController {
-    func set(topView: UIView?) {
+    func set(topView: UIView?, layout: TopViewLayout) {
         if let oldTopView = self.topView {
             oldTopView.removeFromSuperview()
         }
         
+        topViewLayout = layout
         self.topView = topView
         if let topView = topView {
             view.addSubview(topView)
