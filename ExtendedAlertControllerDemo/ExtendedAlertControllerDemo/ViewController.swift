@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 // MARK: @IBAction Methods
 extension ViewController {
     @IBAction func showTopView(sender: AnyObject) {
-        let alertController = ExtendedAlertController(title: "Top View Alert", message: "😁", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Top View Alert", message: "😁", preferredStyle: .alert)
         let imageView = UIImageView(image: UIImage(named: "Check"))
         alertController.add(topView: imageView, layout: .top)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -28,7 +28,7 @@ extension ViewController {
     }
     
     @IBAction func showBeyondTopView(sender: AnyObject) {
-        let alertController = ExtendedAlertController(title: "Beyond Top View Alert", message: "😎", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Beyond Top View Alert", message: "😎", preferredStyle: .alert)
         let imageView = UIImageView(image: UIImage(named: "Check"))
         alertController.add(topView: imageView, layout: .beyondTop)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
