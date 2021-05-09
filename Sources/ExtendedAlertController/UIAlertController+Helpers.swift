@@ -44,7 +44,7 @@ public extension UIAlertController {
     func add(topView: UIView, layout: TopViewLayout) {
         view.addSubview(topView)
         let padding = Constants.padding(for: preferredStyle)
-        topView.center.x = view.bounds.width / UIScreen.main.scale - 10
+        topView.center.x = view.bounds.width / 2.5
         switch layout {
         case .top:
             topView.center.y = padding + topView.bounds.size.height / 2
