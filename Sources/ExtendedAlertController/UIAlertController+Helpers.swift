@@ -68,7 +68,9 @@ fileprivate extension UIAlertController {
     
     func adjustTitle(for view: UIView, padding: CGFloat) {
         let linesCount = Int(newLinesCount(for: view, padding: padding))
-        let lines = (0..<linesCount).map({ _ in "\n" }).reduce("", +)
-        title = lines + (title ?? "")
+        if (linesCount > 0) {
+            let lines = (0..<linesCount).map({ _ in "\n" }).reduce("", +)
+            title = lines + (title ?? "")
+        }
     }
 }
